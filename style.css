@@ -1,0 +1,79 @@
+body{
+    text-align: center;
+    /*background-color: #ff8a00;*/
+}
+
+h1{
+    font-family: monospace;
+    font-size: 40px;
+}
+
+hr{
+    width: 500px;
+    height: 5px;
+    background-color: #000;
+    border: #000;
+}
+
+h2{
+    font-family: "Calibri Light", serif;
+    font-size: 30px;
+}
+
+
+
+#area{
+    /*margin-left: 360px;*/
+    width: 400px;
+    height: 400px;
+    padding: 40px;
+    /*border: 2px solid #000;*/
+    margin: auto;
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /*background-color: #ffc500;*/
+    /*align-self: center;*/
+    /*justify-self: center;*/
+}
+
+.cards{
+    width: 90px;
+    height: 90px;
+    position: relative;
+    /*border: 1px solid #000;*/
+    border-radius: 100%;
+    background: #e0e0e0;
+    /*vertical-align: middle;*/
+    cursor: pointer;
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    transition: 0.25s;
+}
+/*.cards.cardOpen{*/
+/*    transform: rotateY(0deg);*/
+/*}*/
+
+.cards::after{
+    content: '';
+    position: absolute;
+    inset: 0;
+    /*background-color: #ffc500;*/
+    /*background: #ffef2c;*/
+    background-color: black;
+    transition: 0.25s;
+    border-radius: 100%;
+    /*transform: rotateY(0deg);*/
+    backface-visibility: hidden;
+}
+
+.cardOpen:after,
+.cardMatch:after{
+    transform: rotateY(180deg);
+}
+
+/*.cards:hover{*/
+/*    background-color: #ffae00;*/
+/*}*/
