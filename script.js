@@ -8,7 +8,7 @@ let randomizedEmojis = emojis.sort(() => (Math.random() > 0.5) ? 1 : -1);
 
 let clicksCount = 0;
 
-console.log(randomizedEmojis);
+// console.log(randomizedEmojis);
 
 for (let i = 0; i < 16; i++) {
     // cardsBoard.innerHTML += "<div class='cards'>" + randomizedEmojis[i] + "</div>";
@@ -64,7 +64,7 @@ for (let i = 0; i < 60; i++) {
     timeArr.push('00'+':'+(59-i));
 }
 
-console.log(timeArr);
+// console.log(timeArr);
 
 // let time = document.getElementById('time');
 // let j = 0;
