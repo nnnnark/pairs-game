@@ -28,7 +28,7 @@ for (let i = 0; i < 16; i++) {
             let time = document.getElementById('time');
             let j = 0;
             let a = setInterval(() => {
-                time.innerHTML = "Time left: " + timeArr[j+2];
+                time.innerHTML = "Time left: " + timeArr[j];
                 j++
                 if (j === timeArr.length - 1) {
                     clearInterval(a);
@@ -36,7 +36,7 @@ for (let i = 0; i < 16; i++) {
                 }
                 if(match.length === 16){
                     clearInterval(a);
-                    time.innerHTML = "Your time is: " + timeArr[j];
+                    time.innerHTML = "Your time is: " + timeArr[j+2];
                 }
             },1000);
 
